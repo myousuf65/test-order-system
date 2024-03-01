@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order</title>
+    <style>
+    *{
+      margin : 0;
+      padding : 0;
+      box-sizing : border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .line-labe{
+      display: inline-block
+    }
+
+    .pad-div{
+      margin-top : 5px;
+      margin-bottom : 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #003d82;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="form-container">
+      <h2>Create Order - Pet</h2>
+      <form action="#" method="post" class="page-main-table" onsubmit="">
+
+        <div><label class="label" for="sex">SEX:</label>
+          <select name="sex" id="sex">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select></div>
+
+        <div>
+          <label for="pet_name" class="label">Pet Name:</label>
+          <input type="text" name="pet_name" id="pet_name">
+        </div>
+
+        <div>
+          <label for="date_of_birth" class="label">Date of Birth:</label>
+          <input type="date" name="date_of_birth" id="date_of_birth">
+        </div>
+
+        <div>
+          <label for="animal_type" class="label">Animal Type:</label>
+          <input type="text" name="animal_type" id="animal_type">
+        </div>
+
+        <div>
+          <label for="breed" class="label">Breed:</label>
+          <input type="text" name="breed" id="breed">
+        </div>
+
+        <div>
+          <label for="neutered_status" class="label">Neutered Status:</label>
+          <input type="text" name="neutered_status" id="neutered_status">
+        </div>
+
+        <div>
+          <label for="owner_surname" class="label">Owner Surname:</label>
+          <input type="text" name="owner_surname" id="owner_surname">
+        </div>
+
+        <div>
+          <label for="owner_given_name" class="label">Owner Given Name:</label>
+          <input type="text" name="owner_given_name" id="owner_given_name">
+        </div>
+
+        <div>
+          <label for="email" class="label">Email:</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+          <label for="phone" class="label">Phone:</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+
+        <div>
+          <label for="address" class="label">Address:</label>
+          <input type="text" name="address" id="address">
+        </div>
+
+        <div><label class="label" for="postal_address">POSTAL ADDR:</label><input type="text" name="postal_address" id="postal_address"></div>
+        <div><label class="label" for="postal_code">POSTAL CODE:</label><input type="number" name="postal_code" id="postal_code"></div>
+        <div><label class="label" for="reception_date">Reception Date</label><input type="text" name="reception_date" id="reception_date"></div>
+        <div><label class="label" for="collection_date">Colection Date</label><input type="text" name="collection_date" id="collection_date"></div>
+        <div><label class="label" for="collection_time">Collection Time:</label><input type="text" name="collection_time" id="collection_time"></div>
+        <div><label class="label" for="specimen_type">Specimen Type:</label><input type="text" name="specimen_type" id="specimen_type"></div>
+        <div><label for="specimen_origin">Specimen Origin:</label><input type="text" name="specimen_origin" id="specimen_origin"></div>
+        <div><label class="label" for="rejected">Rejected:</label><input type="text" name="rejected" id="rejected"></div>
+        <div><label class="label" for="previous_id">Previous ID:</label><input type="text" name="previous_id" id="previous_id"></div>
+        <div><label class="label" for="panel_code">Panel CODE:</label><input type="text" name="panel_code" id="panel_code"></div>
+        <div><label class="label" for="project_name">Project Name:</label><input type="text" name="project_name" id="project_name"></div>
+
+        <div class='pad-div'>
+          <label class="line-label" for="is_tailormade">Is Tailormade:</label>
+          <input type="checkbox" name="is_tailormade" id="is_tailormade">
+        </div>
+
+        <div>
+          <label class="label" for="test_performed_by">Test Performed By:</label>
+          <input type="text" name="test_performed_by" id="test_performed_by">
+        </div>
+
+        <div>
+          <label class="label" for="clinic_name">Clinic Name:</label>
+          <input type="text" name="clinic_name" id="clinic_name">
+        </div>
+
+        <div>
+          <label class="label" for="doctor_name">Doctor Name:</label>
+          <input type="text" name="doctor_name" id="doctor_name">
+        </div>
+
+        <div>
+          <label class="label" for="concerned_issues">Concerned Issues:</label>
+          <input type="text" name="concerned_issues" id="concerned_issues">
+        </div>
+
+        <div>
+          <label class="label" for="s_quality">S Quality:</label>
+          <input type="text" name="s_quality" id="s_quality">
+        </div>
+
+        <div>
+          <label class="label" for="emotion_problem">Emotion Problem:</label>
+          <input type="text" name="emotion_problem" id="emotion_problem">
+        </div>
+
+        <div>
+          <label class="label" for="project_code">Project Code:</label>
+          <input type="text" name="project_code" id="project_code">
+        </div>
+
+        <div>
+          <label class="label" for="project_name">Project Name:</label>
+          <input type="text" name="project_name" id="project_name">
+        </div>
+
+        <div>
+          <label class="label" for="clinic_trial_code">Clinic Trial Code:</label>
+          <input type="text" name="clinic_trial_code" id="clinic_trial_code">
+        </div>
+
+        <div>
+          <label class="label" for="clinic_trial_time_point">Clinic Trial Time Point:</label>
+          <input type="text" name="clinic_trial_time_point" id="clinic_trial_time_point">
+        </div>
+
+        <div class='pad-div'>
+          <label class="line-label" for="is_free_sample">Is Free Sample:</label>
+          <input type="checkbox" name="is_free_sample" id="is_free_sample">
+        </div>
+
+        <div>
+          <label class="label" for="extraction_date">Extraction Date:</label>
+          <input type="number" name="extraction_date" id="extraction_date">
+        </div>
+
+        <div>
+          <label class="label" for="test_date">Test Date:</label>
+          <input type="text" name="test_date" id="test_date">
+        </div>
+
+        <div>
+          <label class="label" for="report_ready_date">Report Ready Date:</label>
+          <input type="text" name="report_ready_date" id="report_ready_date">
+        </div>
+
+        <div>
+          <label class="label" for="remarks">Remarks:</label>
+          <input type="text" name="remarks" id="remarks">
+        </div> 
+
+
+        <div><label class="label" for="medical_history">MEDICAL HISTORY:</label><textarea name="medical_history" id="medical_history"></textarea></div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <script>
+
+    </script>
+  </body>
+</html>
+
+
+
