@@ -11,6 +11,8 @@ app.use(cors())
 
 
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 
 app.get('/view-all-customers', async (req, res)=>{
   const result = await getAllCustomerOrders()
