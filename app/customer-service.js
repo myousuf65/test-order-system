@@ -17,7 +17,7 @@ export async function getCustomerOrderByUser(user){
 }
 
 export async function vendorCustomerOrderItems(){
-  const [result] = await pool.query('SELECT * FROM CUSTOMER_SPECIMEN WHERE VENDOR == "YEUNG PO"')
+  const [result] = await pool.query('SELECT * FROM CUSTOMER_SPECIMEN WHERE user = "YEUNG PO"')
   return result
 }
 
@@ -38,6 +38,8 @@ WHERE order_id = ${orderId}`
 }
 
 export async function createCustomerOrder(orderDetails){
+
+  console.log()
   const placeholder = Object.keys(orderDetails).map(item=> '?').join(',')
 
   const query = `INSERT INTO CUSTOMER_SPECIMEN (${Object.keys(orderDetails).join(',')}) VALUES (${placeholder})`

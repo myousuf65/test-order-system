@@ -17,7 +17,7 @@ export async function getPetOrderByUser(user){
 }
 
 export async function vendorPetOrderItems(){
-  const [result] = await pool.query('SELECT * FROM PET_SPECIMEN WHERE VENDOR == "YEUNG PO"')
+  const [result] = await pool.query('SELECT * FROM PET_SPECIMEN WHERE user = "YEUNG PO"')
   return result
 }
 
