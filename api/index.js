@@ -113,6 +113,7 @@ app.get('/done-pet/:orderid', async (req,res)=>{
 app.put('/update-customer/:orderid', async (req,res)=>{
   let orderID = req.params.orderid
   let updateInfo = req.body
+  // console.log(updateInfo)
   const result = await updateCustomerOrderDetails(orderID, updateInfo)
   res.send(result)
 })
@@ -124,7 +125,10 @@ app.put('/update-pet/:orderid', async (req,res)=>{
   res.send(result)
 })
 
-app.listen(3000,()=>{
+app.listen(5050,()=>{
   console.log('listeneing on 5050')
 })
 
+
+
+export default app;
